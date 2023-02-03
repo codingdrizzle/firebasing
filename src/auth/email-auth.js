@@ -18,7 +18,7 @@ export const createAuthUserWithEmailAndPassword = (email, password) => {
     }
     
 export const SignInAuthUserWithEmailAndPassword = (email, password) => {
-    signInWithEmailAndPassword(auth(), email, password)
+    signInWithEmailAndPassword( auth(),email, password)
     .then((userCredential) => {
         const user = userCredential.user;
         console.log('User:', user)
