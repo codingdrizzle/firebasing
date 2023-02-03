@@ -93,3 +93,26 @@ button{
     background-color: dodgerblue;
     color: #fff;
 }
+
+
+.opt-container{
+    @apply flex justify-between gap-2;
+    height: 70px !important;
+}
+
+.opt-container input{
+    @apply !mr-0 flex-1 py-5 outline-none;
+}
+
+.react-tel-input .form-control{
+    @apply !w-full  py-6 !text-base;
+    height: 50px !important;
+
+}
+
+/*#recaptcha-container{
+    position: absolute;
+    z-index: 999999;
+    display: none;
+    visibility: hidden;
+}*/

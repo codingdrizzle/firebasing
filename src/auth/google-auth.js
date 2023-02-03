@@ -1,8 +1,5 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import firebaseConfig from './config'
-
-firebaseConfig()
-export const auth = getAuth();
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth } from './config'
 
 const googleProvider = new GoogleAuthProvider();
 
@@ -12,7 +9,10 @@ googleProvider.setCustomParameters({
 
 export const signInWithGooglePopup = async () => {
     try {
-        return await signInWithPopup(auth, googleProvider);
+        const res = await signInWithPopup(auth(), googleProvider);
+        console.log(res)
+        if (res) window.location.href = '/dashboard';
+        return res;
     } catch (error) {
         console.error(error);
     }

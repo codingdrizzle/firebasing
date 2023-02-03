@@ -1,0 +1,26 @@
+nav{
+    background-color: #fff;
+    box-shadow: 1px 1px 10px #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.navlinks{
+    display: flex;
+    gap: 30px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: #222;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
