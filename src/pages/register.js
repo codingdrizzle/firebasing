@@ -73,10 +73,11 @@ const Register = () => {
                     <div>
                         <input type="password" placeholder='Enter your password' required value={password} onChange={(e) => setPassword(e.target.value)} />
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: 30, width: '20%', margin: 'auto' }}>
                         <button onClick={() => createAuthUserWithEmailAndPassword(email, password)}><GrMail /> Sign up with Email</button>
                         <button onClick={signInWithGooglePopup}><FcGoogle /> Sign Up with Google</button>
                         <button onClick={setShow}><BsTelephoneFill /> Sign Up with Phone</button>
+                    <div style={{ display: 'flex', justifyContent: 'flex-start', cursor: 'pointer' }}>
+                        <Link to={'/'}>Login</Link>
                     </div>
                 </div>
             </div>
